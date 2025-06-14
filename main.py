@@ -1,5 +1,6 @@
 from fastapi import FastAPI
-from routes import user, event, speaker, registration
+from routes import user, event, registration, speaker
+
 
 app = FastAPI()
 
@@ -11,3 +12,4 @@ app.include_router(registration.router, prefix="/registration")
 @app.get("/")
 def home ():
     return "Welcome to the Event Management API"
+
