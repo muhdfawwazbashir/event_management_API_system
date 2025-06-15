@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from routes import user, event, registration, speaker
+from schemas.user import Response
 
 
 app = FastAPI()
